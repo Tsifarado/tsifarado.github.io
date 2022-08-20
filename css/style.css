@@ -1,0 +1,293 @@
+@font-face{
+    font-family: Courant;
+    src: url(../fonts/Rubik-Light.ttf);
+}
+@font-face{
+    font-family: Rubik-Medium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face{
+    font-family: Agenda-Light;
+    src: url(../fonts/Agenda-Light.otf);
+}
+@font-face{
+    font-family: Agenda-Medium;
+    src: url(../fonts/Agenda-Medium.otf);
+}
+@font-face{
+    font-family: Rubik-BoldItalic;
+    src: url(../fonts/Rubik-BoldItalic.ttf);
+}
+@font-face{
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0 auto;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+}
+
+/* --------- MENU --------- */
+
+.logo{
+    height: 40%;
+    width: auto;
+    display: flex;
+    margin-left: 50px;
+}
+nav{
+    margin: 0;
+    width: 100vw;
+    height: 90px;
+    background-color: #37003A;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    flex-wrap: wrap;
+}
+
+ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+ul a{
+    color: #E200DD;
+    text-decoration: none;
+    font-family: Courant;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 18px;
+    border: 1px solid #37003A;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+li:last-child{
+    padding-right: 40px;
+}
+ul a:hover{
+    color: #FFB305;
+    border: 1px solid #E200DD;
+    transition: 1s;
+}
+header{
+    background-image: url(../img/fond.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-1{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.info-pers{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infos{
+    font-family: Rubik-Medium;
+    font-size: 1.2em;
+    text-align: right;
+    color: white;
+    line-height: 35px;
+}
+.accroche{
+    width: 70%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+.comment{
+    font-family: Courant;
+    color: white;
+    font-size: 1.2em;
+    width: 65%;
+    margin: 0 0 50px;
+}
+.boutons-p1{
+    margin: 0;
+    display: flex;
+}
+.boutons-p1 a{
+    margin: 0 50px 0 0;
+    font-family: Courant;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid white;
+    background-color: rgb(226, 0, 221, 0.7);
+    border-radius: 40px;
+}
+.boutons-p1 a:hover{
+    color: #37003A;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+.hello{
+    margin: 0;
+    font-family: Agenda-Light;
+    font-size: 3em;
+    color: #FFB305;
+    text-align: left;
+    line-height: 2em;
+}
+.nom{
+    margin: 0 0 50px 0;
+    font-family: Agenda-Medium;
+    color: white;
+    font-size: 3.5em;
+}
+img.identite{
+    border-radius: 50%;
+    border: solid 6px #E200DD;
+    margin-bottom: 50px;
+}
+
+/* contenu experiences professionnelles ------------------------------------------------------------------*/
+
+main{
+    width: 90vw;
+}
+.expro, .diplomes{
+    font-family: Courant;
+    width: 60vw;
+    padding-top: 80px;
+    /* background-color: #FFBBF9; */
+    display: flex;
+    flex-direction: column;
+}
+
+.titre{
+    width: 100%;
+    font-family: Rubik-Medium;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #37003A;
+    margin: 40px auto;
+    padding: 20px 0;
+    border-top: 1px solid #E200DD;
+    border-bottom: 1px solid #E200DD;
+}
+.icon-expro{
+    width: 10%;
+}
+.icon-diplomes{
+    width: 10%;
+}
+.job{
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #E200DD;
+    border-radius: 10px;
+    background-color: white;
+    /* height: initial; */
+}
+.date{
+    display: inline-block;
+    color: #37003A;
+    font-family: Rubik-Regular;
+    font-size: 0.9em;
+    padding: 7px 21px;
+    border-radius: 20px;
+    background-color: #FFBBF9;
+    /* margin-bottom: 10px; */
+}
+.poste{font-size: 1.2em;
+    font-family: Rubik-BoldItalic;
+    margin: 15px 0 5px 0;
+    padding-left: 25px;
+    background: url(../img/puce-2.svg) no-repeat;
+    background-position:  0% 40%;
+    background-size: 20px 20px;
+}
+.societe{
+    font-family: Rubik-Medium;
+    color: #E200DD;
+    padding-left: 25px;
+}
+.taches, .tache-L2{
+    /* margin: 0 0 50px 0; */
+    display: block;
+    line-height: 25px;
+    font-family: Rubik-Regular;
+    display: block;
+}
+.liste-tache{
+    /* list-style-type: square; */
+    list-style-image: url('../img/puce-1.svg');
+    list-style-position: outside;
+    margin-left: 35px;
+}
+.liste-tache-L2{
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 35px;
+    list-style-image: url('../img/puce-3.svg');
+}
+.diplomes{
+width: 60vw;
+}
+/* DIPLOMES */
+.box-dpl{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #E200DD;
+    border-radius: 10px;
+}
+.date-2{
+    width: 25%;
+    /* align-content: flex-start; */
+    display: inline;
+    color: #FFBBF9;
+    font-family: Rubik-Regular;
+    font-size: 0.9em;
+    padding: 7px 21px;
+    border-radius: 20px;
+    background-color: #37003A;
+}
+.box-gauche{
+    display: block;
+    width: 10%;
+}
+.dpl{
+    width: 90%;
+}
+.nom-dlp{font-size: 1.2em;
+    font-family: Rubik-BoldItalic;
+}
+.box-frm{
+    display: block;
+    width: 25%;
+}
